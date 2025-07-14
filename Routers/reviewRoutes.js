@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { addReview, getReviewsForRecipe, updateReview, deleteReview, getAverageRating, getUserReviews } = require('../Controllers/reviewController');
-const { authenticateToken } = require('../middleware/auth');
+const { authenticateToken } = require('../Middleware/auth');
 
 // Add a review
 router.post('/reviews', authenticateToken, addReview);

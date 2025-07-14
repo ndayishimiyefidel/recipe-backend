@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Preference = require('../Models/Preference');
 const User = require('../Models/User');
-const { authenticateToken } = require('../middleware/auth');
+const { authenticateToken } = require('../Middleware/auth');
 
 // Function to get all preferences
 const getAllPreferences = async (req, res) => {

@@ -3,7 +3,7 @@ const router = express.Router();
 const Notification = require('../Models/Notification');
 const { Expo } = require('expo-server-sdk');
 const expo = new Expo();
-const { authenticateToken } = require('../middleware/auth');
+const { authenticateToken } = require('../Middleware/auth');
 
 // Apply auth middleware to all routes
 router.use(authenticateToken);

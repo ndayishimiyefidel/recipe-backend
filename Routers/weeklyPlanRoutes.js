@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { authenticateToken } = require('../middleware/auth');
+const { authenticateToken } = require('../Middleware/auth');
 const { WeeklyPlan, Recipe } = require('../Models');
 const { Op } = require('sequelize');
 const { scheduleNotification } = require('../utils/notificationHelper');
