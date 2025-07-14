@@ -18,10 +18,7 @@ module.exports = {
         logging: false
     },
     production: {
-        username: process.env.DB_USER || 'root',
-        password: process.env.DB_PASSWORD || '',
-        database: process.env.DB_NAME || 'food_recipe_db',
-        host: process.env.DB_HOST || 'localhost',
+        use_env_variable: 'DB_URL',
         dialect: 'mysql',
         logging: false
     }
